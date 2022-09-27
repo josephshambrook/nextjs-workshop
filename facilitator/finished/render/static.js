@@ -20,7 +20,7 @@ export default function StaticPostsPage({ posts }) {
             ride.
           </p>
 
-          <p>Now, time for some blog articles.</p>
+          <p>Now, time for some static-site generated blog articles.</p>
         </section>
 
         <BlogPosts posts={posts} />

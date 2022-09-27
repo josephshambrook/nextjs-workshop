@@ -2,7 +2,7 @@ import Head from 'next/head';
 import BlogPosts from '@/components/BlogPosts';
 import { Logo } from '@/components/Logo';
 
-export default function StaticPostsPage({ posts }) {
+export default function ServerPostsPage({ posts }) {
   return (
     <div>
       <Head>
@@ -20,7 +20,7 @@ export default function StaticPostsPage({ posts }) {
             ride.
           </p>
 
-          <p>Now, time for some blog articles.</p>
+          <p>Now, time for some server-side rendered blog articles.</p>
         </section>
 
         <BlogPosts posts={posts} />
@@ -29,8 +29,8 @@ export default function StaticPostsPage({ posts }) {
   );
 }
 
-// This also gets called at build time
-export async function getServerSideProps(context) {
+// This also gets called at request time
+export async function getServerSideProps() {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
   const posts = await res.json();
 

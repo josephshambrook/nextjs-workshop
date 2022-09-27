@@ -22,8 +22,6 @@ export default function Home() {
     fetchData();
   }, []);
 
-  if (posts.length === 0) return null;
-
   return (
     <div>
       <Head>
@@ -44,7 +42,7 @@ export default function Home() {
           <p>Now, time for some blog articles.</p>
         </section>
 
-        <BlogPosts posts={posts} />
+        <BlogPosts posts={posts || []} />
       </main>
     </div>
   );
