@@ -20,9 +20,9 @@ cd nextjs-workshop && npm install
 # 3. To run the site in development mode
 npm run dev
 
-# 4. To run the site in production mode
+# 4. To build the site in production mode
 npm run build
-# then
+# then run this to preview the site in prod mode
 npm run start
 ```
 
@@ -36,5 +36,5 @@ All content for the workshop is contained within the `/docs` folder, sorted by o
 - API routes
 - Performance optimisations
 
-[Node.js]: https://nodejs.org/en/
+[node.js]: https://nodejs.org/en/
 [nvm]: https://npm.github.io/installation-setup-docs/installing/using-a-node-version-manager.html

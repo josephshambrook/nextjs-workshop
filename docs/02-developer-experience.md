@@ -9,5 +9,6 @@ Next.js includes a few preconfigured tools to help manage some of these needs. T
 - Fast Refresh included, providing quick refreshes of content without refreshing state or the whole page, and giving explanations of syntax errors
 - Support as far back as IE11, by loading polyfills as certain features are used
 - Support for Dynamic Imports
+- Support for folder aliases (used in this project)
 
 These inclusions make it a little easier to get started on the project, as some of the more opinionated decisions have been made.
